@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <head>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <title>
+            Hannah Ho's Portfolio
+        </title>
+    </head>
+    <body>
+        <main>
+        <header>
+        <nav class="topnav" id="portfolioTopnav">
+        <a href="#about">About</a>
+        <a href="#skill">Skills</a>
+        <a href="#accomplishements">Accomplishements</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="openMenu"><i class="fa fa-bars"></i></a>
+        </nav>
+        <h1>Hannah Ho</h1>
+        </header>
+        <div id="aboutsection">
+            <figure>
+            <a href="https://www.linkedin.com/in/hannah-ho-23095048/" target="_blank"><img src="PPix.jpg" width="200" height="200" alt="My profile picture"/></a>
+            </figure>
+            <!--About Section -->
+            <h2 class="heading uppercase">About</h2>
+            <p>I am a PhD researcher at <strong>CQUniversity</strong>. I'm combining research techniques from <em>neuroscience</em> and <em>psychology</em> to investigate neural activities of habit. I am interested in how our brain works when we behave in a habitual way as compared to when we do it intentionally. </p>
+        </div>  
+        <br>
+        <br>
+        <div>
+        <!--Skills Section -->
+        <h3 id="skills">Skills</h3>
+            <h4>Research Skills</h4>
+            <ul class="list">
+                <li>Report writing</li>
+                <li>Data collection</li>
+                <li>Planning and scheduling</li>
+                <li>Analysis of information from different sources</li>
+            </ul>
+            <h4>Interpersonal Skills</h4>
+            <ul class="list">
+                <li>Active listening</li>
+                <li>Teamwork</li>
+                <li>Responsibility</li>
+                <li>Leadership</li>
+            </ul>
+            <h4>Technical Skills</h4>
+            <ul class="list">
+                <li>Programming language</li>
+                <li>Common operating systems</li>
+                <li>Software proficiency</li>
+                <li>Project management</li>
+            </ul>
+        </div>
+        <div>
+            <!--Accomplishments Section -->
+            <h2 id="accomplishements">Accomplishments</h2>
+            <h3> Coding Examples </h3>
+	        <a href="quiz.html" target="_blank">Take the Portfolio Quiz!</a>
+            <br><br>
+            <table>
+                <tr>
+                    <th>Publications</th>
+                    <th>Award</th>
+                    <th>Presentations</th>
+                </tr>
+                <tr>
+                    <td>Publication A</td>
+                    <td>Award A</td>
+                    <td>Presentation A</td>
+                </tr>
+                <tr>
+                    <td>Publication B</td>
+                    <td>Award B</td>
+                    <td>Presentation B</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <!--Contact Section -->
+            <h2 class="contactform" id="contactsection">Contact</h2>
+            <a href="https://www.linkedin.com/in/hannah-ho-23095048/" target="_blank">LinkedIn</a>
+            <form>
+                <label for="name">Name*</label>
+                <br>
+                <input type="text" name="name" id="name" required>
+                <br>
+                <br>
+                <label for="email">Email*</label>
+                <br>
+                <input type="text" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <br>
+                <br>
+                <label for="mobile">Mobile (Optional)</label>
+                <br>
+                <input type="tel" name="mobile" id="mobile" pattern="[0-9] {10,16}">
+                <br>
+                <br>
+                <label for="textarea">Leave your message below*</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        </main>
+    <script src="./nav.js"></script>
+    </body>
+</html>
